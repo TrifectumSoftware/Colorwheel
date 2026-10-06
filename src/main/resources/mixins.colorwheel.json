@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.8.5-GTNH",
+  "package": "trifectumsoftware.colorwheel.mixins",
+  "refmap": "mixins.colorwheel.refmap.json",
+  "target": "@env(DEFAULT)",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [],
+  "client": ["MixinBlock", "MixinRenderBlocks", "MixinRenderBlockFluid"],
+  "server": []
+}

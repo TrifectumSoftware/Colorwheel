@@ -1,0 +1,21 @@
+{
+	"modListVersion": 2,
+	"modList": [{
+		"modid": "${modId}",
+		"name": "${modName}",
+		"description": "Paint any block any color you want with an in-game color picker. Colors are stored per block position and synced to all nearby players.",
+		"version": "${modVersion}",
+		"mcversion": "${minecraftVersion}",
+		"url": "https://github.com/trifectumsoftware/Colorwheel",
+		"updateUrl": "",
+		"authorList": ["trifectumsoftware"],
+		"credits": "",
+		"logoFile": "assets/colorwheel/textures/logo.png",
+		"screenshots": [],
+		"parent": "",
+		"requiredMods": [],
+		"dependencies": [],
+		"dependants": [],
+		"useDependencyInformation": false
+	}]
+}
