@@ -14,6 +14,7 @@ import trifectumsoftware.colorwheel.client.ClientColorData;
 public class MixinRenderBlockFluid {
 
     @Redirect(
+        require = 0,
         method = "renderWorldBlock",
         at = @At(
             value = "INVOKE",

@@ -22,6 +22,7 @@ import trifectumsoftware.colorwheel.client.ClientColorData;
 public class MixinRenderBlocks {
 
     @Redirect(
+        require = 0,
         method = "renderStandardBlock",
         at = @At(
             value = "INVOKE",
@@ -31,6 +32,7 @@ public class MixinRenderBlocks {
     }
 
     @Redirect(
+        require = 0,
         method = "renderBlockVine",
         at = @At(
             value = "INVOKE",
@@ -40,6 +42,7 @@ public class MixinRenderBlocks {
     }
 
     @Redirect(
+        require = 0,
         method = "renderBlockStainedGlassPane",
         at = @At(
             value = "INVOKE",
@@ -49,6 +52,7 @@ public class MixinRenderBlocks {
     }
 
     @Redirect(
+        require = 0,
         method = "renderCrossedSquares",
         at = @At(
             value = "INVOKE",
@@ -58,6 +62,7 @@ public class MixinRenderBlocks {
     }
 
     @Redirect(
+        require = 0,
         method = "renderBlockLiquid",
         at = @At(
             value = "INVOKE",
@@ -67,6 +72,7 @@ public class MixinRenderBlocks {
     }
 
     @Redirect(
+        require = 0,
         method = "renderBlockCactus",
         at = @At(
             value = "INVOKE",
@@ -76,6 +82,7 @@ public class MixinRenderBlocks {
     }
 
     @Redirect(
+        require = 0,
         method = "renderBlockFlowerpot",
         at = @At(
             value = "INVOKE",
@@ -85,6 +92,7 @@ public class MixinRenderBlocks {
     }
 
     @Redirect(
+        require = 0,
         method = "renderBlockBrewingStand",
         at = @At(
             value = "INVOKE",
@@ -94,6 +102,7 @@ public class MixinRenderBlocks {
     }
 
     @Redirect(
+        require = 0,
         method = "renderBlockCauldron",
         at = @At(
             value = "INVOKE",
@@ -103,6 +112,7 @@ public class MixinRenderBlocks {
     }
 
     @Redirect(
+        require = 0,
         method = "renderBlockFlowerpot",
         at = @At(
             value = "INVOKE",
@@ -112,6 +122,7 @@ public class MixinRenderBlocks {
     }
 
     @Redirect(
+        require = 0,
         method = "renderBlockAnvilMetadata",
         at = @At(
             value = "INVOKE",
@@ -121,6 +132,7 @@ public class MixinRenderBlocks {
     }
 
     @Redirect(
+        require = 0,
         method = "renderBlockPane",
         at = @At(
             value = "INVOKE",
@@ -130,6 +142,7 @@ public class MixinRenderBlocks {
     }
 
     @Redirect(
+        require = 0,
         method = "renderBlockDoublePlant",
         at = @At(
             value = "INVOKE",
@@ -139,6 +152,7 @@ public class MixinRenderBlocks {
     }
 
     @Redirect(
+        require = 0,
         method = "renderBlockStem",
         at = @At(
             value = "INVOKE",
@@ -148,6 +162,7 @@ public class MixinRenderBlocks {
     }
 
     @Redirect(
+        require = 0,
         method = "renderBlockHopper",
         at = @At(
             value = "INVOKE",
@@ -157,6 +172,7 @@ public class MixinRenderBlocks {
     }
 
     @Redirect(
+        require = 0,
         method = "renderBlockHopperMetadata",
         at = @At(
             value = "INVOKE",

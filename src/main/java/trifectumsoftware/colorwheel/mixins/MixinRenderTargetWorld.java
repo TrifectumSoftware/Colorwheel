@@ -38,7 +38,7 @@ public abstract class MixinRenderTargetWorld {
     @Unique
     private float colorwheel$tintB = 1.0F;
 
-    @Inject(method = "setLight", at = @At("TAIL"), remap = false)
+    @Inject(method = "setLight", at = @At("TAIL"), remap = false, require = 0)
     private void colorwheel$applyTint(float shadow, int brightness, CallbackInfo ci) {
         if (!colorwheel$tintResolved) {
             colorwheel$tintResolved = true;
