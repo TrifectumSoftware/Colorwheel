@@ -6,6 +6,8 @@
   "target": "@env(DEFAULT)",
   "compatibilityLevel": "JAVA_8",
   "mixins": [],
-  "client": ["MixinBlock", "MixinRenderBlocks", "MixinRenderBlockFluid"],
+  "client": ["MixinBlock", "MixinBlockDoublePlant", "MixinBlockGrass", "MixinBlockLeaves",
+             "MixinBlockLilyPad", "MixinBlockLiquid", "MixinBlockOldLeaf", "MixinBlockRedstoneWire",
+             "MixinBlockReed", "MixinBlockStem", "MixinBlockTallGrass", "MixinBlockVine"],
   "server": []
 }

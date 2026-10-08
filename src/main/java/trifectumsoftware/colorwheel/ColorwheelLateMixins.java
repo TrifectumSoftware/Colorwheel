@@ -31,6 +31,10 @@ public class ColorwheelLateMixins implements ILateMixinLoader {
             LOG.info("Colorwheel: NTM and GT/IC2 found, enabling both charging systems.");
             mixins.add("MixinItemColorToolNTM");
         }
+        if (loadedMods.contains("beddium")) {
+            LOG.info("Colorwheel: Beddium found, keeping its cached biome colors paintable.");
+            mixins.add("MixinBiomeColorCache");
+        }
         return mixins;
     }
 }

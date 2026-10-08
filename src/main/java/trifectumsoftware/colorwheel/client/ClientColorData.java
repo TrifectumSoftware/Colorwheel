@@ -3,7 +3,6 @@ package trifectumsoftware.colorwheel.client;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import net.minecraft.block.Block;
 import net.minecraft.world.IBlockAccess;
 
 import trifectumsoftware.colorwheel.storage.ColorUtil;
@@ -56,14 +55,12 @@ public final class ClientColorData {
         }
     }
 
-    public static int resolve(Block block, IBlockAccess world, int x, int y, int z) {
-        if (world != null) {
-            Integer stored = get(x, y, z);
-            if (stored != null) {
-                return ColorUtil.tint(stored);
-            }
+    public static Integer paintedColor(IBlockAccess world, int x, int y, int z) {
+        if (world == null) {
+            return null;
         }
-        return block.colorMultiplier(world, x, y, z);
+        Integer stored = get(x, y, z);
+        return stored == null ? null : ColorUtil.tint(stored);
     }
 
     public static void clear() {
